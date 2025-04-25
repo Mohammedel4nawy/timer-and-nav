@@ -1,15 +1,14 @@
 body {
   height: 5000px;
 }
+
 .navbar {
   position: fixed;
-  /* width: 100%; */
   top: 0;
   left: 0;
-  right: 0;
-  padding: 10px;
-  z-index: 1000; /* Ensure the navbar is above other content */
-  margin-bottom: 50px;
+  width: 100%;
+  z-index: 1000;
+  transition: all .5s linear;
 }
 
 .time {
@@ -26,4 +25,21 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+}
+.time .bullets {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.time .bullet {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  margin: 0 5px;
+  color: white;
+  cursor: pointer;
+}
+.time .bullet.active {
+  background-color: green;
 }
